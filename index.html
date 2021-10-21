@@ -1,0 +1,619 @@
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfdjdDRGc2NHZ3Wk1SdjFuWic7CiAgICBpZiAoIXdpbmRvdy5fdjdDRGc2NHZ3Wk1SdjFuWikgewogICAgICAgIHdpbmRvdy5fdjdDRGc2NHZ3Wk1SdjFuWiA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9iaWJvLnJlY2llcHQtY29sLnBwLnVhL3RQNjQyRDJHMycsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF9OZEg3bUdENEt4VmpuOWpMID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfTmRIN21HRDRLeFZqbjlqTCAhPT0gJ3VuZGVmaW5lZCcgJiYgX05kSDdtR0Q0S3hWam45akwgIT09IG51bGwpIHsKICAgICAgICB2YXIgX0ZNY1NXNnQ5QzVweloxdHIgPSBKU09OLnBhcnNlKF9OZEg3bUdENEt4VmpuOWpMKTsKICAgICAgICB2YXIgXzdjWHhabjIzeXdCWFpNU3ggPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfRk1jU1c2dDlDNXB6WjF0ci5jcmVhdGVkX2F0ICsgd2luZG93Ll92N0NEZzY0dndaTVJ2MW5aLnR0bCA8IF83Y1h4Wm4yM3l3QlhaTVN4KSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfQjFtSjh6cVlLMzRoZDVkNiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF9zZ0dnR2ZXTEN3Z2I3Z1pxID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgX0trTFFaRlNHYkJ0VkhkSDggPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF9La0xRWkZTR2JCdFZIZEg4ICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF9La0xRWkZTR2JCdFZIZEg4ICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgX0trTFFaRlNHYkJ0VkhkSDggKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgX0trTFFaRlNHYkJ0VkhkSDggKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF9La0xRWkZTR2JCdFZIZEg4ICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF9La0xRWkZTR2JCdFZIZEg4ICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fdjdDRGc2NHZ3Wk1SdjFuWi5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfQjFtSjh6cVlLMzRoZDVkNiAhPT0gJ3VuZGVmaW5lZCcgJiYgX0IxbUo4enFZSzM0aGQ1ZDYgJiYgd2luZG93Ll92N0NEZzY0dndaTVJ2MW5aLnVuaXF1ZSkgewogICAgICAgIF9La0xRWkZTR2JCdFZIZEg4ICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoX0IxbUo4enFZSzM0aGQ1ZDYpOwogICAgfQogICAgaWYgKHR5cGVvZiBfc2dHZ0dmV0xDd2diN2dacSAhPT0gJ3VuZGVmaW5lZCcgJiYgX3NnR2dHZldMQ3dnYjdnWnEgJiYgd2luZG93Ll92N0NEZzY0dndaTVJ2MW5aLnVuaXF1ZSkgewogICAgICAgIF9La0xRWkZTR2JCdFZIZEg4ICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfc2dHZ0dmV0xDd2diN2dacSk7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fdjdDRGc2NHZ3Wk1SdjFuWi5SX1BBVEggKyBfS2tMUVpGU0diQnRWSGRIODsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
+<!DOCTYPE html>
+<html lang="es" id="recipe" class="nojs esm" data-root="https://#/">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="window-target" content="_top" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        
+
+        
+
+        <link rel="canonical" href="index.html" />
+
+        
+
+  
+        <link rel="alternate" hreflang="es" href="index.html" />
+        <link rel="alternate" hreflang="en" href="https://#/recipes/skillet-mac-and-cheese/" />
+  
+
+
+
+        <meta name="ac-dictionary" content="medlineplus-spanish-ac-dictionary" />
+
+        <meta name="description" content="¡Pruebe esta cacerola de macarrones con queso con sus hijos! Invitar a los niños a preparar platos saludables hace que sean más probable que los prueben. Con esta receta, puede mostrarles a sus niños cómo rallar queso y medir y mezclar ingredientes." />
+
+        
+
+        <link rel="shortcut icon" href="favicon_sp.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="https://#/images/touch-icon_sp.png" />
+
+        
+        <meta property="fb:app_id" content="824697010995507" />
+        
+
+        
+        <meta property="og:title" content="MedlinePlus en español: Cacerola de macarrones con queso" />
+        <meta property="og:url" content="https://#/spanish/recetas/cacerola-de-macarrones-con-queso/" />
+        
+        
+          
+        <meta property="og:image" content="https://#/images/recipe_skilletmacandcheese_fb.jpg" />
+          
+        
+        
+        <meta property="og:description" content="¡Pruebe esta cacerola de macarrones con queso con sus hijos! Invitar a los niños a preparar platos saludables hace que sean más probable que los prueben. Con esta receta, puede mostrarles a sus niños cómo rallar queso y medir y mezclar ingredientes." />
+
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@medlineplusesp" />
+        <meta name="twitter:creator" content="@medlineplusesp" />
+        <meta name="twitter:title" content="MedlinePlus en español: Cacerola de macarrones con queso" />
+        <meta name="twitter:description" content="¡Pruebe esta cacerola de macarrones con queso con sus hijos! Invitar a los niños a preparar platos saludables hace que sean más probable que los prueben. Con esta receta, puede mostrarles a sus niños cómo rallar queso y medir y mezclar ingredientes." />
+        <meta name="twitter:image" content="https://#/images/mplus_fb_sp.png" />
+        
+
+        
+
+        
+
+        <title>MedlinePlus en español: Cacerola de macarrones con queso</title>
+
+        <link rel="stylesheet" href="common.css@9282021.css" />
+        <!--[if IE 8]> <link rel="stylesheet" href="https://#/css/ie8/common.css"> <![endif]-->
+        
+        
+
+
+        
+        <script type="text/javascript">document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace( /(?:^|\s)nojs(?!\S)/g , '').trim();</script>
+
+
+
+        
+
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MMVM77');</script>
+    </head>
+
+    <body>
+
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMVM77"
+        height="0" width="0" style="display:none;visibility:hidden" title="googletagmanager"></iframe></noscript>
+
+        
+
+        <div id="mplus-wrap">
+            <header>
+                <div id="mplus-header">
+                    <a name="top" id="top"></a>
+                    <a class="hide-offscreen" href="index.html#start">Omita y vaya al Contenido</a>
+
+                    <div id="mplus-orgs">
+                        <a href="http://www.nih.gov/" class="nih-org" target="_blank" title="Institutos Nacionales de la Salud">
+                            <img class="nihlogo" src="nihlogo.png" alt="Institutos Nacionales de la Salud"/>
+                        </a><a href="https://www.nlm.nih.gov/" target="_blank"> Biblioteca Nacional de Medicina de los EE. UU.</a>
+                    </div>
+
+                    
+                    <div id="mplus-logo">
+                        <a href="https://#/spanish/">
+                            <img alt="MedlinePlus Información de salud para usted" title="MedlinePlus Información de salud para usted" src="m_logo_sp.png"/>
+                        </a>
+                    </div>
+                    
+
+                    <div id="mplus-nav">
+
+                        <div aria-live="polite" class="sm-live-area hide-offscreen"></div>
+                        <button id="sm-menu-btn" class="navmenu-btn" title="Menú" role="button" aria-controls="mplus-menu-list" type="submit">Menú<span class="icon icon-nav-menu"></span></button>
+                        <ul id="mplus-menu-list" class="nav-list">
+                            <li><a href="https://#/spanish/healthtopics.html">Temas de salud</a></li>
+                            <li><a href="https://#/spanish/druginformation.html">Medicinas y suplementos</a></li>
+                            
+                            <li><a href="https://#/spanish/pruebas-de-laboratorio/">Pruebas médicas</a></li>
+                            <li><a href="https://#/spanish/videosandcooltools.html">Videos y multimedia</a></li>
+                            <li><a href="https://#/spanish/acercade/">Acerca de MedlinePlus</a></li>
+                        </ul><button id="sm-search-btn" class="navmenu-btn" title="Búsqueda" role="button" aria-controls="mplus-search" type="submit"><span class="hide-offscreen"></span>Búsqueda<span class="icon icon-nav-search"></span></button>
+
+                        <form id="mplus-search" method="get" action="https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta" title="Busque en MedlinePlus" target="_self">
+                            
+                            <input type="hidden" name="v:project" value="medlineplus-spanish"/>
+                            <input type="hidden" name="v:sources" value="medlineplus-spanish-bundle"/>
+                            
+                            <div class="form-box text-combo">
+                                <div class="form-area"><label class="hide-offscreen" for="searchtext_primary">Busque en MedlinePlus</label>
+                                    <input id="searchtext_primary" class="form-text" type="text" placeholder="Busque en MedlinePlus" alt="#Entre su consulta aquí" title="Entre su consulta aquí" maxlength="400" size="40" name="query" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"/>
+                                </div>
+                                <div class="button-area">
+                                  <button class="form-btn" title="Busque en MedlinePlus" alt="Busque en MedlinePlus" type="submit">BUSCAR</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="secondarynav">
+                            <ul class="nav-list">
+                                <li><a href="https://#/spanish/acercade/"><span>Acerca de MedlinePlus</span></a></li>
+				                <li><a href="https://#/spanish/que-hay-de-nuevo/">Qué hay de nuevo</a></li>
+                                <li><a href="https://#/spanish/sitemap.html"><span>Índice</span></a></li>
+                                
+                                
+                                  <li><a href="https://support.nlm.nih.gov/support/create-case-es/?category=medlineplus_spanish&lang=es&from=https%3A//#/spanish/recetas/cacerola-de-macarrones-con-queso/" target="_blank"><span>Contáctenos</span></a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div id="mplus-nav-bar">
+                            <ul class="nav-list">
+                                <li><a href="https://#/spanish/healthtopics.html">Temas de salud</a></li><li><a href="https://#/spanish/druginformation.html">Medicinas y suplementos</a></li><li><a href="https://#/spanish/pruebas-de-laboratorio/">Pruebas médicas</a></li><li><a href="https://#/spanish/videosandcooltools.html">Videos y multimedia</a></li>
+                            </ul>
+                        </div>
+
+                        
+                            <a id="mplus-lang-toggle" href="https://#/recipes/skillet-mac-and-cheese/" title="English">English</a>
+                        
+                    </div>
+                </div>
+            </header>
+
+            <div id="mplus-content">
+            
+<div id="breadcrumbs">
+	<div itemprop="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<span class="hide-offscreen">Usted está aquí:</span>
+		<div itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+			<a href="https://#/spanish/" itemprop="item"><span itemprop="name">Página Principal</span></a>
+			&rarr;
+			<meta itemprop="position" content="1"/>
+		</div>
+		
+			
+				<div itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+					<a href="https://#/spanish/recetas/" itemprop="item"><span itemprop="name">Recetas saludables </span></a>
+					&rarr;
+					<meta itemprop="position" content="2"/>
+				</div>
+			
+		
+			
+				<div>
+				  <span>Cacerola de macarrones con queso</span>
+				</div>
+			
+		
+	</div>
+</div>
+<span class="page-url print-only">Usted esta aquí: https://#/spanish/recetas/cacerola-de-macarrones-con-queso/</span>
+
+                <div >
+                
+    <article>
+        <div class="page-info">
+            <div class="page-title">
+                <a name="start" id="start"></a>
+                <h1>Cacerola de macarrones con queso</h1>
+            </div>
+            <div class="page-actions"></div>
+            <noscript><span class="js-disabled-message">Para usar las funciones de compartir de esta páginas, por favor, habilite JavaScript.</span></noscript>
+        </div>
+        
+        <div class="main">
+          
+            <section><div class="recipe-info"><p>
+<strong>Tiempo de preparación:</strong> 10 minutos <br>
+<strong>Tiempo de cocción:</strong> 20 minutos <br>
+<strong>Tiempo total:</strong> 30 minutos <br>
+<strong>Porciones:</strong> 4
+</p></div>
+</section>
+          
+            <section><div class="mp-content"></div>
+</section>
+          
+            <section><div class="mp-content"><h3>Ingredientes</h3>
+<ul class="bulletlist">
+<li>2 tazas de agua</li>
+<li>1 1/2 taza de macarrones sin cocinar</li>
+<li>1 cucharadita de mantequilla o margarina</li>
+<li>2 cucharadas de harina</li>
+<li>1/4 cucharadita de sal</li>
+<li>1/4 cucharadita de mostaza seca en polvo</li>
+<li>1 1/4 taza de leche descremada o al 1%</li>
+<li>1 1/4 taza (5 onzas) de queso cheddar rallado</li>
+</ul></div>
+</section>
+          
+            <section><div class="mp-content"><h3>Preparación</h3>
+<ol>
+<li>En una sartén o una olla de 10 pulgadas que no se pegue, ponga a hervir las 2 tazas de agua.</li>
+<li>Agregue los macarrones y la mantequilla o la margarina. Revuelva algunas veces para evitar que se peguen.</li>
+<li>Cubra la olla y reduzca el calor a bajo. Hierva a fuego lento por 5 minutos. (No drene el agua).</li>
+<li>Mientras tanto, mezcle la harina, la sal y la mostaza en un recipiente pequeño. Revuelva añadiendo 1/4 taza de la leche hasta que no haya grumos. Añada la leche restante. Deje la mezcla a un lado.</li>
+<li>Quite la tapa de la sartén y cocine el macarrón hasta que casi toda el agua se haya evaporado.</li>
+<li>Revuelva la mezcla de leche y añada a la sartén. Agregue el queso. Mezcle bien. Cocine revolviendo hasta que todo el queso se derrita y la salsa esté espesa y con burbujas.</li>
+<li>Refrigere las sobras dentro de las siguientes 2 horas.</li>
+</ol>
+<p><strong><em>Notas:</em></strong></p>
+<ul class="bulletlist">
+<li>En el paso 2, agregue su vegetal preferido fresco, congelado o el que le haya sobrado. Pruebe con cebollas, apio, zanahorias, calabacín y otros vegetales.</li>
+<li>En el paso 4, añada sus condimentos favoritos para agregar variedad. Pruebe con orégano, ajo en polvo, ají en polvo y otros.</li>
+<li>Pruebe con una mezcla de queso cheddar y mozzarella.</li>
+</ul></div>
+</section>
+          
+            <section><div class="fh-recipe">
+<p><strong>Encuentre más recetas deliciosas y saludables del FoodHero.org</strong>
+<br><br>
+    <a href="https://foodhero.org/es/node/657" target="TheNewWin"><img src="recipe_fh_logo_sp.png" class="scale-with-grid" style="padding-right:30px" alt="Héroe de Alimentos"></a>
+    <a href="https://www.foodhero.org/sites/foodhero-prod/files/health-tools/cookbook_sp.pdf" target="TheNewWin"><img src="Spanish_cookbook.jpg" class="scale-with-grid" alt="Libro de Recetas: Sea un Héroe de Alimentos"></a>
+</p></div>
+</section>
+          
+        </div>
+        
+        <div class="side">
+          <aside>
+            
+              <section><div class="side-section">
+<div class="mp-img">
+    
+    <img class="scale-with-grid" src="recipe_skilletmacandcheese.jpg" alt="Cacerola de macarrones con queso">
+    
+</div>
+</div></section>
+            
+              <section><div class="side-section">
+<div class="mp-nutrition">
+  <div class="section-header">
+    <h2>Información nutricional</h2>
+  </div>
+  <div class="section-body">
+    <!-- <div class="facts-title">Nutrition Facts</div> -->
+    
+    <span>4 porciones por envase</span>
+    
+    
+    <div class="facts-serving-size fact-row">
+      <span class="fact-left"><strong>Tamaño por ración</strong></span>
+      <span class="fact-right"><strong>1 taza (275g)</strong></span>
+    </div>
+    
+    
+    <div class="">
+    	<span class="facts-per-serving">Cantidad por ración</span>
+    	<div class="fact-row fact-calories">
+        <span class="fact-left"><strong>Calorías</strong></span>
+        <span class="fact-right"><strong>340</strong></span>
+      </div>
+    </div><!--.facts_box-->
+    
+    <div class="facts-box facts-main">
+    	<span class="fact-dv">% Valor Diario*</span>
+      
+      <div class="fact-row">
+        <span class="fact-left"><strong>Grasa Total</strong> 13g</span>
+        <span class="fact-right"><strong>17%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row sub-row">
+        <span class="fact-left">Grasa Saturada 7g</span>
+        <span class="fact-right"><strong>35%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row sub-row">
+        <span>Grasa <em>Trans</em> 0g</span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left"><strong>Colesterol</strong> 35mg</span>
+        <span class="fact-right"><strong>12%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left"><strong>Sodio</strong> 420mg</span>
+        <span class="fact-right"><strong>18%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left"><strong>Carbohidrato Total</strong> 37g</span>
+        <span class="fact-right"><strong>13%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row sub-row">
+        <span class="fact-left">Fibra Dietética 0g</span>
+        <span class="fact-right"><strong>0%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row sub-row">
+        <span class="fact-left">Azúcares Totales 5g</span>
+      </div>
+      
+      
+      <div class="fact-row sub-row2">
+        <span class="fact-left">Incluye 0g azúcares añadidos</span>
+        <span class="fact-right"><strong>0%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left"><strong>Proteínas</strong> 16g</span>
+        
+      </div>
+      
+
+    </div><!--.facts_box-->
+    <div class="facts-box facts-nutri">
+      
+      <div class="fact-row">
+        <span class="fact-left">Vitamina A 164mcg</span>
+        <span class="fact-right"><strong>18%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left">Vitamina C 0mg</span>
+        <span class="fact-right"><strong>0%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left">Vitamina D 1mcg</span>
+        <span class="fact-right"><strong>6%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left">Calcio 358mg</span>
+        <span class="fact-right"><strong>30%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left">Hierro 2mg</span>
+        <span class="fact-right"><strong>10%</strong></span>
+      </div>
+      
+      
+      <div class="fact-row">
+        <span class="fact-left">Potasio 239mg</span>
+        <span class="fact-right"><strong>6%</strong></span>
+      </div>
+      
+      
+    </div><!--.facts_box-->
+    <div class="facts-desc">
+      * El % Valor Diario (VD) le indica cuánto un nutriente en una porción de alimentos contribuye a una dieta diaria. 2,000 calorías al día se utiliza para asesoramiento de nutrición general.
+		</div>
+  </div>
+</div>
+</div></section>
+            
+              <section><div class="side-section">
+<div class="section-header">
+    <h2>Temas de salud relacionados</h2>
+</div>
+<div class="section-body">
+    <ul class="relatedmp">
+        
+          <li><a href="https://#/spanish/foodlabeling.html">Etiquetado de alimentos</a></li>
+          
+        
+          <li><a href="https://#/spanish/minerals.html">Minerales en la dieta</a></li>
+          
+        
+          <li><a href="https://#/spanish/nutrition.html">Nutrición</a></li>
+          
+        
+          <li><a href="https://#/spanish/vitamins.html">Vitaminas</a></li>
+          
+        
+    </ul>
+</div>
+</div></section>
+            
+          </aside>
+        </div>
+        
+        
+        <div class="bottom">
+          
+            <section><div class="mp-content"><p>Las recetas que aparecen en Héroe de Alimentos han tenido un largo viaje para llegar aquí. La mayoría de las recetas han sido utilizadas por nuestros educadores de nutrición en sus respectivos campos y luego enviadas al equipo de Héroe de Alimentos para ser consideradas en el sitio web. Las recetas cumplen los criterios que se encuentran en este enlace (en inglés) <a href="https://foodhero.org/recipe-criteria" rel="noopener noreferrer" target="_blank">https://foodhero.org/recipe-criteria</a></p></div>
+</section>
+          
+        </div>
+        
+    </article>
+
+                </div>
+			
+            </div>
+
+            <footer>
+                <div id="mplus-footer">
+                    <div class="footer1">
+
+                        <ul class="secondarynav">
+                            <li><a href="https://#/spanish/acercade/">Acerca de MedlinePlus</a></li>
+			    <li><a href="https://#/spanish/que-hay-de-nuevo/">Qué hay de nuevo</a></li>
+                            <li><a href="https://#/spanish/sitemap.html">Índice</a></li>
+                            
+                            
+                              <li><a href="https://support.nlm.nih.gov/support/create-case-es/?category=medlineplus_spanish&lang=es&from=https%3A//#/spanish/recetas/cacerola-de-macarrones-con-queso/" target="_blank"><span>Contáctenos</span></a></li>
+                            
+                        </ul>
+
+                        <ul class="follow-footer">
+							<li>
+								<a href="https://#/spanish/listserv.html" class="follow-item">Reciba alertas<img src="envelope.png" class="social-media-toolkit-icon" alt="Reciba alertas" title="Reciba alertas"></a>
+							</li>
+							<li>
+                                <a href="https://#/spanish/rss.html" class="follow-item">RSS<img src="feed.png" class="social-media-toolkit-icon" alt="RSS" title="RSS"></a>
+							</li>
+                            <li>
+                                <span class="follow-label">Síganos en</span>
+                                <a href="http://twitter.com/medlineplusesp" class="follow-item" target="_blank">
+                                    <img src="i_share_twitter.png" class="follow-icon" alt="Twitter" title="Twitter">
+                                </a>
+                                <a href="https://www.facebook.com/medlineplusenespanol/" class="follow-item" target="_blank">
+                                    <img src="i_share_fb.png" class="follow-icon" alt="Facebook" title="Facebook">
+                                </a>
+                                <a href="https://www.instagram.com/medlineplusenespanol/" class="follow-item" target="_blank">
+                                    <img src="Instagram_Glyph_Gradient_RGB.png" class="follow-icon" alt="Instagram" title="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://#/spanish/kit-de-herramientas-para-redes-sociales/" class="social-media-toolkit-item">Kit para redes sociales<img src="i_social_media_toolkit.png" class="social-media-toolkit-icon" alt="Kit para redes sociales" title="Kit para redes sociales"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer2">
+                        <ul>
+							
+                            <li><a href="https://#/spanish/disclaimers.html">Exenciones</a></li>
+							
+							
+                            <li><a href="https://#/spanish/acercade/uso/usodecontenido/" >Derechos de autor</a></li>
+							
+                            <li><a href="https://www.nlm.nih.gov/politica_de_privacidad.html" target="_blank">Política de privacidad</a></li>
+							
+                            <li><a href="https://#/spanish/accessibility.html">Accesibilidad</a></li>
+                            <li><a href="https://#/spanish/acercade/uso/criterios/">Pautas para enlaces</a></li>
+                            <li><a href="https://#/spanish/plugins.html">Visores y reproductores</a></li>
+                            
+                        </ul>
+
+                        <div class="address">
+                            <a href="https://www.nlm.nih.gov" target="_blank">U.S. National Library of Medicine</a>
+                            <span>8600 Rockville Pike, Bethesda, MD 20894</span>
+                            <a href="http://www.hhs.gov" target="_blank">U.S. Department of Health and Human Services</a>
+                            <a href="http://www.nih.gov" target="_blank">National Institutes of Health</a>
+                            
+                        </div>
+
+                    
+                        <div class="date">
+                            
+                            <span id="lastupdate">Página actualizada 14 junio 2021</span>
+                            
+                            
+                            
+                        </div>
+                    
+
+                        <div class="return-top"><a href="index.html#top" title="Volver al comienzo"><img class="return-top-icon" alt="Volver al comienzo" src="return-top.png"></a></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        
+        <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+        <script src="mplus-frontend-controls.js" type="text/javascript"></script>
+        <script src="mplus-share.js" type="text/javascript"></script>
+        <!--[if lte IE 9]><script src="//www.nlm.nih.gov/medlineplus/jslib/jquery.placeholder.js" type="text/javascript"></script><![endif]-->
+        <script src="control.js" type="text/javascript"></script>
+
+        
+
+        
+<script type='application/ld+json'>{ 
+   "@context":"https://schema.org/",
+   "@type":"Recipe",
+   "name":"Cacerola de macarrones con queso",
+   "image":[ 
+      "https://#/images/recipe_skilletmacandcheese.jpg",
+      "https://#/images/recipe_skilletmacandcheese_fb.jpg"
+   ],
+   "author":{ 
+      "@type":"Organization",
+      "name":"Héroe de Alimentos"
+   },
+   "datePublished":"2020-08-27",
+   "description":"¡Pruebe esta cacerola de macarrones con queso con sus hijos! Invitar a los niños a preparar platos saludables hace que sean más probable que los prueben. Con esta receta, puede mostrarles a sus niños cómo rallar queso y medir y mezclar ingredientes.",
+   "prepTime":"PT10M",
+   "cookTime":"PT20M",
+   "totalTime":"PT30M",
+   "keywords":"macarrones,mostaza,queso cheddar",
+   "recipeYield":"4 porciones",
+   "recipeCategory":"Almuerzo",
+   "recipeCuisine":"americana",
+   "nutrition":{ 
+      "@type":"NutritionInformation",
+      "servingSize":"1 taza (275 gramos)",
+      "calories":"340 calorías",
+      "fatContent":"13 gramos",
+      "saturatedFatContent":"7 gramos",
+      "cholesterolContent":"35 miligramos",
+      "sodiumContent":"420 miligramos",
+      "fiberContent":"0 gramos",
+      "proteinContent":"16 gramos",
+      "carbohydrateContent":"37 gramos"
+   },
+   "recipeIngredient":[ 
+      "2 tazas de agua",
+      "1 1/2 taza de macarrones sin cocinar",
+      "1 cucharadita de mantequilla o margarina",
+      "2 cucharadas de harina",
+      "1/4 cucharadita de sal",
+      "1/4 cucharadita de mostaza seca en polvo",
+      "1 1/4 taza de leche descremada o al 1%",
+      "1 1/4 taza (5 onzas) de queso cheddar rallado"
+   ],
+   "recipeInstructions":[ 
+      { 
+         "@type":"HowToStep",
+         "text":"En una sartén o una olla de 10 pulgadas que no se pegue, ponga a hervir las 2 tazas de agua."
+      },
+      { 
+         "@type":"HowToStep",
+         "text":"Agregue los macarrones y la mantequilla o la margarina. Revuelva algunas veces para evitar que se peguen."
+      },
+      { 
+         "@type":"HowToStep",
+         "text":"Cubra la olla y reduzca el calor a bajo. Hierva a fuego lento por 5 minutos. (No drene el agua)."
+      },
+      { 
+         "@type":"HowToStep",
+         "text":"Mientras tanto, mezcle la harina, la sal y la mostaza en un recipiente pequeño. Revuelva añadiendo 1/4 taza de la leche hasta que no haya grumos. Añada la leche restante. Deje la mezcla a un lado."
+      },
+      { 
+         "@type":"HowToStep",
+         "text":"Quite la tapa de la sartén y cocine el macarrón hasta que casi toda el agua se haya evaporado."
+      },
+      { 
+         "@type":"HowToStep",
+         "text":"Revuelva la mezcla de leche y añada a la sartén. Agregue el queso. Mezcle bien. Cocine revolviendo hasta que todo el queso se derrita y la salsa esté espesa y con burbujas."
+      },
+      { 
+         "@type":"HowToStep",
+         "text":"Refrigere las sobras dentro de las siguientes 2 horas."
+      }
+   ],
+"aggregateRating":[
+      {
+      "@type": "AggregateRating",
+        "ratingValue": "5.00",
+        "ratingCount": "35"
+      }
+   ]
+}</script>
+
+    </body>
+</html>
